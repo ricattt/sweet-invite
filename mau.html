@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YAYY!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px rgba(0,0,0,0.2);
+    }
+
+    p {
+      font-size: 20px;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .emoji {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .heart {
+      animation: pulse 1.5s infinite;
+    }
+
+    .qr {
+      margin-top: 30px;
+      background: white;
+      padding: 10px;
+      border-radius: 12px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="emoji heart">💖</div>
+  <h1>YAYY!</h1>
+
+  <p>📅 Pick u up at: <strong>8 PM</strong></p>
+  <p>📍 Location: <strong>Botania</strong></p>
+  <p>👕 Dresscode: <strong>Casual & comfy</strong></p>
+  <p>☎️ Contact me if u need anything</p>
+  <p>✨ Can’t wait to see u! ✨</p>
+
+  <div class="qr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://maps.app.goo.gl/D9mBotaniaExample" alt="QR Location">
+    <p style="color:#333;">Scan for directions 📍</p>
+  </div>
+
+</body>
+</html>
